@@ -28,8 +28,33 @@ const SubjectSelector = () => {
     }
   };
 
+  // return (
+  //   <div>
+  //     <h2>Select 3 Subjects</h2>
+  //     <div>
+  //       {Array.from({ length: 3 }).map((_, index) => (
+  //         <div key={index}>
+  //           <select
+  //             value={selectedSubjects[index] || ""}
+  //             onChange={(e) => handleSubjectChange(index, e.target.value)}
+  //           >
+  //             <option value="">Select a subject</option>
+  //             {subjects.map((subject) => (
+  //               <option key={subject.id} value={subject.name}>
+  //                 {subject.name}
+  //               </option>
+  //             ))}
+  //           </select>
+  //         </div>
+  //       ))}
+  //     </div>
+  //     <button onClick={handleSubmit}>Submit</button>
+  //   </div>
+  // );
+
+
   return (
-    <div>
+    <div className="container">
       <h2>Select 3 Subjects</h2>
       <div>
         {Array.from({ length: 3 }).map((_, index) => (
